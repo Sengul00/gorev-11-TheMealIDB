@@ -1,65 +1,53 @@
+# RecipeHub: Dinamik Yemek Tarifleri Listesi
+Bu proje, temel React Hook'ları (useState, useEffect) ve harici bir API (TheMealDB) kullanarak tam responsive çalışan bir yemek tarifi listeleme uygulamasıdır.
 
-# React + Vite Başlangıç Şablonu
+🎯 Proje Amacı
+React Temellerini Uygulamak: useState ile uygulama durumunu ve useEffect ile yan etkileri (API çağrılarını) yönetmek.
 
-Bu proje, modern bir React uygulaması başlatmak için temel bir yapı sunar. Vite kullanılarak yapılandırılmıştır ve Tailwind CSS ile birlikte gelir.
+Asenkron Veri Yönetimi: fetch API'sini kullanarak harici bir kaynaktan (TheMealDB) veri çekmek.
 
-## 🚀 Hızlı Başlangıç
+Responsive Tasarım: Tailwind CSS ile tüm cihaz boyutlarına uyumlu (mobil, tablet, masaüstü) bir grid sistemi oluşturmak.
 
-Projeyi bilgisayarına klonlamak ve başlatmak için aşağıdaki adımları takip edebilirsin:
+✨ Özellikler
+Dinamik Listeleme: Uygulama ilk açıldığında varsayılan bir arama terimine (örneğin 'chicken') göre tarifleri listeler.
 
-```bash
-npx degit ozcanzaferayan/react proje-adi
-cd proje-adi
+Gecikmeli Arama (Debounced Search): Kullanıcı arama çubuğuna yazmayı bıraktıktan 500ms sonra API isteği gönderilir, bu da sunucu yükünü azaltır.
+
+Responsive Grid:
+
+Mobil: 1 Sütun
+
+Tablet (md): 2 Sütun
+
+Desktop (lg/xl): 3-4 Sütun
+
+Kompakt Tarif Kartları: Her kartta yemek adı, resmi, kategori ve ülke bilgileri gösterilir.
+
+🛠 Kullanılan Teknolojiler
+React: Kullanıcı arayüzü kütüphanesi
+
+TypeScript: Statik tip kontrolü
+
+Vite: Hızlı geliştirme ortamı ve build aracı
+
+Tailwind CSS: Utility-first CSS çerçevesi (Responsive tasarım için kullanıldı)
+
+TheMealDB API: Yemek tarifleri verisi kaynağı
+
+🚀 Kurulum ve Çalıştırma
+Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları takip edin:
+
+Projeyi Klonlayın:
+
+git clone [GitHub Repo Adresiniz]
+cd gorev8-RecipeHub
+
+Bağımlılıkları Yükleyin:
+
 npm install
+
+Geliştirme Sunucusunu Başlatın:
+
 npm run dev
-```
 
-> Bu komut sayesinde Git geçmişi olmadan yalnızca proje dosyaları indirilir.
-
-## 📁 Klasör Yapısı
-
-```
-proje-adi/
-├── public/
-├── src/
-│   ├── assets/
-│   ├── App.tsx
-│   ├── index.css
-│   ├── main.tsx
-│   └── vite-env.d.ts
-├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package.json
-├── package-lock.json
-├── README.md
-├── tsconfig.json
-├── tsconfig.app.json
-├── tsconfig.node.json
-└── vite.config.ts
-```
-
-## 🛠 Teknolojiler
-
-- ⚛️ React
-- ⚡ Vite
-- 🎨 Tailwind CSS
-- 🧹 ESLint
-- 🟦 TypeScript
-
-## 🧪 Gereksinimler
-
-- Node.js 18+
-- npm (veya yarn)
-
-## 🌐 GitHub
-
-[Proje GitHub Sayfası](https://github.com/ozcanzaferayan/react)
-
-## 📄 Lisans
-
-MIT Lisansı ile lisanslanmıştır. Özgürce kullanabilir, düzenleyebilir ve paylaşabilirsiniz.
-
----
-
-Keyifli kodlamalar! 🎉
+Uygulama genellikle http://localhost:5173 adresinde çalışmaya başlayacaktır.
